@@ -5,11 +5,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'hospital-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
+  templateUrl: './app.component.html',
   styles: [],
 })
 export class AppComponent {
