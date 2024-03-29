@@ -7,7 +7,7 @@
 <!-- loader END -->
 <!-- Wrapper Start -->
 <div class="wrapper">
-    <hospital-sidenav class="iq-sidebar"/>
+    <hospital-sidenav class="iq-sidebar" />
 
     <!-- Page Content  -->
     <div id="content-page" class="content-page">
@@ -98,7 +98,10 @@
                             </div>
                         </div>
                         <div class="iq-card-body">
-                            <div id="home-chart-06" style="height: 350px;"></div>
+                            <div id="home-chart-06">
+                                <highcharts-chart [Highcharts]="chartPacientesPorGenero" [options]="pacientesPorGeneroOptions"
+                                    class="w-1/2"></highcharts-chart>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,8 +326,10 @@
                                         <a class="dropdown-item" routerLink="#"><i class="ri-eye-fill me-2"></i>View</a>
                                         <a class="dropdown-item" routerLink="#"><i
                                                 class="ri-delete-bin-6-fill me-2"></i>Delete</a>
-                                        <a class="dropdown-item" routerLink="#"><i class="ri-pencil-fill me-2"></i>Edit</a>
-                                        <a class="dropdown-item" routerLink="#"><i class="ri-printer-fill me-2"></i>Print</a>
+                                        <a class="dropdown-item" routerLink="#"><i
+                                                class="ri-pencil-fill me-2"></i>Edit</a>
+                                        <a class="dropdown-item" routerLink="#"><i
+                                                class="ri-printer-fill me-2"></i>Print</a>
                                         <a class="dropdown-item" routerLink="#"><i
                                                 class="ri-file-download-fill me-2"></i>Download</a>
                                     </div>
